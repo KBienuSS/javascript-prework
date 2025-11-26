@@ -8,17 +8,19 @@ function clearMessages(){
 	document.getElementById('messages').innerHTML = '';
 }
 
-function getMoveName(moveNumber){
+function getMoveName(moveNumber) {
 	if(moveNumber == 1){
 		moveName = 'kamień';
+		return moveName;
 	} else if(moveNumber == 2){
 		moveName = 'papier';
+		return moveName;
 	} else if(moveNumber == 3){
 		moveName = 'nożyce';
-	} else {
-		moveName = 'Wpisz poprawną liczbę!';
+		return moveName;
 	}
 
+	moveName = 'Wpisz poprawną liczbę!';
 	return moveName;
 }
 
