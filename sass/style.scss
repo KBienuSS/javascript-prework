@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.welcome-text {
+    font-size: 0.6em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 15px;
+}
+
+.instructions p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+    background: #ecf0f1;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.6em;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.move-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1.1em;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+    flex-grow: 1;
+}
+
+#rock {
+    background-color: #e74c3c;
+}
+
+#paper {
+    background-color: #2ecc71;
+}
+
+#scissors {
+    background-color: #f39c12;
+}
+
+.move-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.move-button:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#messages {
+    background: #fcfcfc;
+    border: 1px solid #bdc3c7;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#messages div {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    border-bottom: 1px dashed #ecf0f1;
+}
+
+#messages div:last-child {
+    border-bottom: none;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+@media (max-width: 480px) {
+    #buttons {
+        flex-direction: column;
+    }
+    .container {
+        padding: 20px;
+    }
+}
+
+#result{
+    display: flex;
+
+    div{
+        margin: auto;
+        margin-bottom:30px;
+        text-align: center;
+        font-weight: bold;
+    }
+}

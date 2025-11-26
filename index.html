@@ -1,20 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
-	<meta charset="UTF-8">
-	<title>Kamień, papier, nożyce</title>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamień, Papier, Nożyce - Gra</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons">
-			<button id="rock">Kamień</button>
-			<button id="paper">Papier</button>
-			<button id="scissors">Nożyce</button>
+    <div class="container">
+        <header>
+            <h1>KAMIEŃ 🪨 PAPIER 📄 NOŻYCE ✂️</h1>
+            <p class="welcome-text">Witaj w klasycznej grze! Zmierz się z komputerem i sprawdź swoje szczęście.</p>
+        </header>
+
+        <section class="instructions">
+            <p><b>Zasady są proste:</b><br><br>Wybierz jeden z trzech ruchów, klikając odpowiedni przycisk.
+                <br><br>Kamień tępi Nożyce<br> Nożyce tną Papier<br> Papier owija Kamień</p>
+        </section>
+
+		<div id="result">
+			<div id="player-win">0</div><div>-</div><div id="computer-win">0</div>
 		</div>
-		<div id="messages"></div>
-	</div>
-	<script src="js/functions.js"></script>
-	<script src="js/script.js"></script>
+
+        <div id="buttons">
+            <button type="button" id="rock" class="move-button">Kamień</button>
+            <button type="button" id="paper" class="move-button">Papier</button>
+            <button type="button" id="scissors" class="move-button">Nożyce</button>
+        </div>
+
+        <div id="messages"></div>
+    </div>
+
+    <script src="js/functions.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
