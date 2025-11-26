@@ -6,7 +6,7 @@ let computerMove = 'nieznany ruch';
 
 if(randomNumber == 1){
   computerMove = 'kamień';
-} else if{randomNumber ==2}{
+} else if(randomNumber ==2){
     computerMove = 'papier';
 } else {
     computerMove = 'nożyce';
@@ -20,10 +20,10 @@ let playerMove = 'nieznany ruch';
 
 if(playerNumber == 1){
   playerMove = 'kamień';
-} else if{playerNumber ==2}{
-    play = 'papier';
+} else if(playerNumber == 2){
+    playerMove = 'papier';
 } else {
-    playerNumber = 'nożyce';
+    playerMove = 'nożyce';
 }
 
 printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to '+ playerMove +', to wygrywasz!');
