@@ -12,6 +12,18 @@ if(randomNumber == 1){
     computerMove = 'nożyce';
 }
 
+let playerNumber = prompt('Wybierz swój ruch: wpisz 1, 2 lub 3.');
+
+console.log('Wybrana liczba gracza to: ' + playerNumber);
+
 let playerMove = 'nieznany ruch';
+
+if(playerNumber == 1){
+  playerMove = 'kamień';
+} else if{playerNumber ==2}{
+    play = 'papier';
+} else {
+    playerNumber = 'nożyce';
+}
 
 printMessage('Zagrałem ' + computerMove + '! Jeśli Twój ruch to '+ playerMove +', to wygrywasz!');
