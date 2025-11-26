@@ -22,7 +22,3 @@ document.getElementById('paper').addEventListener('click', function() {
 document.getElementById('scissors').addEventListener('click', function() {
     playGame(3);
 });
-
-for( let i = 0; i < 75; i++ ){
-        playGame(Math.floor(Math.random() * 3 + 1));
-}
