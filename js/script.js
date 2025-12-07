@@ -1,5 +1,4 @@
 {
-   
     let computerWin = 0;
         playerWin = 0;
 
@@ -9,16 +8,6 @@
           paperDiv = document.getElementById('paper');
           scissorsDiv = document.getElementById('scissors');
           messageDiv = document.getElementById('messages');
-
-	const printMessage = function(msg){
-		const div = document.createElement('div');
-		div.innerHTML = msg;
-		messageDiv.appendChild(div);
-	};
-
-	const clearMessages = function(){
-		messageDiv.innerHTML = '';
-	};
 
 	const getMoveName = function(moveNumber) {
 		if(moveNumber == 1){
